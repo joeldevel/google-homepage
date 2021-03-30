@@ -4,6 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Google</title>
+    <style>
+    body {
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      grid-template-areas: "header"
+                           "main"
+                           "footer";
+      grid-template-rows: 10vh auto minmax( 10vh ,auto);
+    }
+    header {
+      grid-area: header;
+      background: blue;
+    }
+    main {
+      grid-area: main;
+      background: plum;
+    }
+    footer {
+      grid-area: footer;
+      background: gray;
+    }
+    </style>
   </head>
   <body>
     <header>
