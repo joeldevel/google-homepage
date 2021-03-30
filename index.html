@@ -4,34 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <!-- add the ? at the end of href so it works on firefox. I don't know why -->
-    <link rel="icon" href="favicon.ico?" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico?" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico?" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Google</title>
-    <style>
-    body {
-      padding: 0;
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      grid-template-areas: "header"
-                           "main"
-                           "footer";
-      grid-template-rows: 10vh auto minmax( 10vh ,auto);
-    }
-    header {
-      grid-area: header;
-      background: blue;
-    }
-    main {
-      grid-area: main;
-      background: plum;
-    }
-    footer {
-      grid-area: footer;
-      background: gray;
-    }
-    </style>
   </head>
   <body>
     <header>
@@ -44,7 +22,20 @@
     </header>
 
     <main>
-      <img src="./img/googlelogo_color_272x92dp.png" alt="">
+      <img src="./img/googlelogo_color_272x92dp.png" alt="" class="google-img">
+      <div class="search-container">
+        <form action="">
+          <div class="input-container input-search-container">
+            <img src="./img/desktop_searchbox_sprites302_hr.webp" alt="">
+            <input type="text" class="input-search">
+          </div>
+          <div class="input-container">
+            <input type="submit" class="btn">
+            <input type="submit" class="btn">
+          </div>
+
+        </form>
+      </div>
     </main>
 
     <footer>
