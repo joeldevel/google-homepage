@@ -89,11 +89,12 @@ a.button:hover {
 }
 
 .button {
-  border: 1px solid var(--border-grey);
+  border: 1px solid transparent;
   display: inline-block;
   border-radius: 6px;
   padding: 8px;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
 .button-big {
@@ -105,6 +106,10 @@ a.button:hover {
 }
 .bg-blue {
   background: var(--blue-button-bg);
+}
+.bg-blue:hover {
+  filter: brightness(120%);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
 .cta {
   padding: 10px 25px;
@@ -140,6 +145,8 @@ a.button:hover {
   padding: 14px;
   border-radius: 50px;
   margin-bottom: 18px;
+  transition: all 0.1s ease-in-out;
+
 
 }
 .input-search:active,
@@ -156,6 +163,12 @@ a.button:hover {
   justify-content: center;
   margin: 10px auto;
   /* background: green; */
+}
+
+.button-big:hover {
+  border-color: var(--border-grey);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  filter: luminosity(120%);
 }
 
 /* footer  */
