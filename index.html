@@ -17,7 +17,20 @@
         <ul class="top-nav__list">
           <li class="top-nav__list-item"><a href="">Gmail</a></li>
           <li class="top-nav__list-item"><a href="">Images</a></li>
-          <li class="top-nav__list-item"><a href="">/**/</a></li>
+          <li class="top-nav__list-item dots-item"><a href="">
+            <span class="google-apps-closed-container">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </span>
+          </a>
+        </li>
           <li class="top-nav__list-item "><a href="" class="button bg-blue cta">Sign In</a></li>
         </ul>
       </nav>
@@ -59,5 +72,50 @@
       </div>
     </footer>
 
+
+<div class="google-apps-panel hidden">
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+  <div class="app-container"></div>
+</div>
   </body>
+
+  <script type="text/javascript">
+    const appsPanel= document.querySelector('.google-apps-panel');
+    const dots = document.querySelector('.dots-item');
+    dots.prepend(appsPanel);
+    dots.addEventListener('click', showAppsPanel);
+
+    function showAppsPanel(e) {
+
+      e.preventDefault();
+      appsPanel.classList.toggle('hidden');
+    }
+  </script>
 </html>
