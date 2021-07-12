@@ -12,34 +12,36 @@
     <title>Google</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <li><a href="">Gmail</a></li>
-        <li><a href="">Images</a></li>
-        <li><a href="">&Dagger;</a></li>
-        <li><a href="">&sect;</a></li>
+    <header class="header">
+      <nav class="top-nav">
+        <ul class="top-nav__list">
+          <li class="top-nav__list-item"><a href="">Gmail</a></li>
+          <li class="top-nav__list-item"><a href="">Images</a></li>
+          <li class="top-nav__list-item"><a href="">/**/</a></li>
+          <li class="top-nav__list-item "><a href="" class="button bg-blue">Acceder</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="body-content">
       <img src="./img/googlelogo_color_272x92dp.png" alt="" class="google-img">
       <div class="search-container">
         <form action="">
           <div class="input-container input-search-container">
-            <img src="./img/desktop_searchbox_sprites302_hr.webp" alt="">
+            <!-- <img src="./img/desktop_searchbox_sprites302_hr.webp" alt=""> -->
             <input type="text" class="input-search">
           </div>
-          <div class="input-container">
-            <input type="submit" class="btn">
-            <input type="submit" class="btn">
+          <div class="buttons-container">
+            <input type="submit" class="button-big">
+            <input type="submit" class="button-big">
           </div>
 
         </form>
       </div>
     </main>
 
-    <footer>
-      footer
+    <footer class="footer">
+
     </footer>
 
   </body>
