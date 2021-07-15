@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   --nav-text-black:#5b5b5b;
   --border-grey:#dfe1e5;
