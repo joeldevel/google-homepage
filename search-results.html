@@ -8,15 +8,26 @@
     <link rel="shortcut icon" href="./favicon.ico?" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/results.css">
     <title>Search results</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header search-results-header">
+      <img src="./img/googlelogo_color_272x92dp.png" alt="" class="google-img google-img-small">
+
+      <div class="search-container">
+        <form action="">
+          <div class="input-container input-search-container">
+            <!-- <img src="./img/desktop_searchbox_sprites302_hr.webp" alt=""> -->
+            <input type="text" class="input-search">
+          </div>
+        </form>
+      </div>
+
       <nav class="top-nav">
         <ul class="top-nav__list">
-          <li class="top-nav__list-item"><a href="">Gmail</a></li>
-          <li class="top-nav__list-item"><a href="">Images</a></li>
+          <!-- <li class="top-nav__list-item"><a href="">Gmail</a></li>
+          <li class="top-nav__list-item"><a href="">Images</a></li> -->
           <li class="top-nav__list-item dots-item"><a href="">
             <span class="google-apps-closed-container">
               <span class="dot"></span>
@@ -34,23 +45,20 @@
           <li class="top-nav__list-item "><a href="" class="button bg-blue cta">Sign In</a></li>
         </ul>
       </nav>
+
+      <div class="filter-results-tabs-container">
+        <div class="tab active">All</div>
+        <div class="tab">Videos</div>
+        <div class="tab">News</div>
+        <div class="tab">Maps</div>
+        <div class="tab">Images</div>
+        <div class="tab">More</div>
+        <div class="tab">Tools</div>
+      </div>
     </header>
 
     <main class="body-content">
-      <!-- <img src="./img/googlelogo_color_272x92dp.png" alt="" class="google-img"> -->
-      <div class="search-container">
-        <form action="">
-          <div class="input-container input-search-container">
-            <!-- <img src="./img/desktop_searchbox_sprites302_hr.webp" alt=""> -->
-            <input type="text" class="input-search">
-          </div>
-          <div class="buttons-container">
-            <input type="submit" class="button button-big" value="Google Search">
-            <input type="submit" class="button button-big" value="I'm Feeling Lucky">
-          </div>
 
-        </form>
-      </div>
     </main>
 
     <footer class="footer">
